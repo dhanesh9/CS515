@@ -30,9 +30,9 @@ class Game:
 
     def go(self, direction):
         if direction not in self.current_room["exits"]:
-            print("There's no way to go", direction)
+            print("There's no way to go", direction + ".")
         else:
-            print("You go ",direction)
+            print("You go ",direction + ".\n")
             room_index = self.current_room["exits"][direction]
             self.current_room = self.game_map[room_index]
             self.look()
@@ -107,10 +107,7 @@ class Game:
             verb = command[0]
             if verb == "go":
                 if len(command) < 2:
-                    print("Sorry, you need to 'go' somewhere")
-                    ans = input()
-                    if 'east' in ans:
-                        self.go('east')
+                    print("Sorry, you need to 'go' somewhere.")
                 else:
                     self.go(command[1])
 
