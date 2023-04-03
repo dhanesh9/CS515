@@ -1,0 +1,43 @@
+[
+ {"name": "Main room", 
+  "desc": "You are in the main room with doors to your north and south.",
+  "exits": { "north": 1, "east": 2 },
+  "items": []
+ }
+,
+ {"name": "Hallway", 
+  "desc": "You are in the hallway with doors to your north, east and south",
+  "exits": { "north": 3, "east": 6, "south": 0 },
+  "items": []
+ }
+,
+ {"name": "Armory", 
+  "desc": "You are in the room of Armory with 2 doors",
+  "exits": { "west": 0, "north": 6 },
+  "items": ["gun", "rope"]
+ }
+,
+ {"name": "Bedroom",
+  "desc": "You are in the bedroom with 3 doors!",
+  "exits": { "west": 5, "north": 4, "south": 1 },
+  "items": []
+ }
+ ,
+ {"name": "Storage",
+  "desc": "You are in the storage room and there is an exit to your south",
+  "exits": { "south": 3},
+  "items": ["key"]
+ }
+ ,
+ {"name": "Treasure Room",
+  "desc": "You are in the treasure room, there is an exit to your east",
+  "exits": { "east": 3},
+  "items": ["treasure"]
+ }
+ ,
+ {"name": "Shaft",
+  "desc": "You fell into the shaft",
+  "exits": {"west": 1,"south": 2},
+  "items": []
+ }
+]
