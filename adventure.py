@@ -22,11 +22,11 @@ class Game:
         elif self.game_lost:
             print("You have already lost the game!")
             return
-        print(self.current_room["name"] + "\n")
+        print("> " + self.current_room["name"] + "\n")
         print(self.current_room["desc"] + "\n")
         if "items" in self.current_room:
             print("Items:", ', '.join(self.current_room["items"]) + "\n")
-        print("Exits:", ', '.join(self.current_room["exits"].keys()) + "\n")
+        print("Exits:", ' '.join(self.current_room["exits"].keys()) + "\n")
 
     def go(self, direction):
         if direction not in self.current_room["exits"]:
@@ -61,10 +61,6 @@ class Game:
             print("You drop the", item)
         else:
             print("You're not carrying a", item)
-        # if item == "magic wand" and self.current_room["name"] == "Boss Room" and "sword" in self.inventory:
-        #     print("You defeat the boss with the magic wand and sword! You win!")
-        #     self.game_won = True
-
 
     def display_inventory(self):
         if not self.inventory:
