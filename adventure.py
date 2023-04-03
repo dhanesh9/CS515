@@ -32,7 +32,7 @@ class Game:
         if direction not in self.current_room["exits"]:
             print("There's no way to go", direction + ".")
         else:
-            print("You go ",direction + ".\n")
+            print("You go",direction + ".\n")
             room_index = self.current_room["exits"][direction]
             self.current_room = self.game_map[room_index]
             self.look()
