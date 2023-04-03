@@ -62,6 +62,7 @@ class Game:
         else:
             print("You're not carrying a", item)
 
+
     def display_inventory(self):
         if not self.inventory:
             print("You're not carrying anything.")
@@ -97,7 +98,7 @@ class Game:
                 print("Game over! You lost!")
                 break      
             try:
-                command = input("What would you like to do? ").lower().split()
+                command = input("What would you like to do?").lower().split()
             except EOFError:
                 print("Use 'quit' to exit")
                 continue
