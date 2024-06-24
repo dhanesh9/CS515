@@ -21,16 +21,12 @@ But be careful, there's a deadly shaft in the map. If you fall into it without a
 -I created different maps and kept testing all the maps including the one on Canvas. Finally, when I thought about my final map I implemented the win/lose conditions for the map
 and checked all the edge cases. I executed my code using both command prompt and visual studio. I made sure everything works perfectly with the items, inventory and current room.
 
-3)any bugs or issues you could not resolve
 
-- I wasn't able to handle the EOFError with ^D but when I read about it online it said that sometimes on windows ^D cannot trigger EOFError but ^Z does. SO when I check with 
-  ^Z it worked well.
-
-4)an example of a difficult issue or bug and how you resolved
+3)an example of a difficult issue or bug and how you resolved
 
 - I wasn't able to run the code without passing the json file path but I had to read a lot to find out about 'argparse'. I fixed it using argparse
 
-5)a list of the three extensions you’ve chosen to implement, with appropriate detail on them for the CAs to evaluate them (i.e., what are the new verbs/features, how do you exercise them, where are they in the map)
+4)a list of the three extensions you’ve chosen to implement, with appropriate detail on them for the CAs to evaluate them (i.e., what are the new verbs/features, how do you exercise them, where are they in the map)
 
 - I implemented drop(), help() and winning losing condition.
   i)Drop()- with the drop function we can drop the items from the inventory one by one. Once you drop the item in a specific room, that particular item gets appended in the current room's
